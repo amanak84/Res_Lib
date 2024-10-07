@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #463f3a ;
+}
+
+nav{
+    width: 100vw;
+    background-color:rgb(101, 101, 179);
+    height: 50px;
+    color: #e0afa0;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    max-width: 100%;
+    font-size: 14px;
+}
+nav a{
+    color: #e0afa0;
+    /* color: #bcb8b1; */
+    text-decoration: none;
+    /* text-shadow: 0px 10px 20px #000e; */
+    margin-right: 50px;
+}
+
+nav a:hover{
+    color: #0d1b2a;
+}
+
+nav .info{
+    /* border: 1px solid black; */
+    width: 1250px;
+    margin-left: 80px;
+}
+
+#themes{
+    width: 65px;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    height: 25px;
+    font-weight: 500;
+    transition: 2s;
+}
+
+#themes:hover{
+    background-color:#ffbe0b;
+    cursor: pointer;
+}
+
+.content{
+    width: 100vw;
+    max-width: 100%;
+    color: #f4f3ee;
+    /* border: 1px solid white; */
+    width: 700px;
+    font-size: 12px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 8%;
+    top: 20%;
+}
+
+.content .title{
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.content .topic{
+    font-size: 50px;
+    color: #f1683a;
+    font-weight: 600;
+}
+
+.content .desc{
+    margin-top: 15px;
+    line-height: 20px;
+    width: 660px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+footer{
+    /* background-color: yellow; */
+    position: absolute;
+    bottom: 5%;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.various{
+    width: 70vw;
+    /* border: 1px solid black; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+}
+
+.various button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 3s;
+}
+
+.various button:hover{
+    background-color: #ffbe0b;
+}
+
+.same{
+    margin-right: 10px;
+}
+
+.title,
+.topic,
+.desc{
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: showContent 0.5s linear 1s 1 forwards;
+}
+
+@keyframes showContent{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.same{
+    box-shadow: 0px 5px 10px #000;
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: showContent 0.5s linear 1s 1 forwards;
+}
+
+.pics{
+    height: 300px;
+    width: 500px;
+    border: none;
+    position: absolute;
+    right: 6%;
+    top: 20%;
+    border-radius: 10px;
+    /* box-shadow: 5px 0px 30px #eee; */
+    transition: 2s;
+    cursor: pointer;
+}
+
+.pics{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.pics{
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateX(50px);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: showContent 0.5s linear 1s 1 forwards;
+}
+
+.info a i{
+    margin-right: 2px;
+}
+
+
+.login{
+    margin-right: 5px;
+    height: 25px;
+    border-radius: 20px;
+    width: 65px;
+}
+
+.login button{
+    width: 65px;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    height: 25px;
+    font-weight: 500;
+    transition: 2s;
+}
+
+.login button:hover{
+    background-color:#ffbe0b;
+    cursor: pointer;
+}
+
+.login a{
+    width: 65px;
+}
+
+.name{
+    font-size: 12px;
+    font-weight: 600;
+    color: #f4f3ee;
+    /* border: 2px solid orange; */
+    position: absolute;
+    right: 5%;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    transition-delay: 5s;
+}
+
+
